@@ -1,0 +1,28 @@
+[project]
+name = "make-cryogrid-runs"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "lukegre", email = "lukegre@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "fsspec>=2025.12.0",
+    "hvplot>=0.12.2",
+    "matplotlib>=3.10.8",
+    "planetarycomputer-helper",
+    "s3fs>=2025.12.0",
+    "salem>=0.3.11",
+    "xdem>=0.1.6",
+]
+
+[project.scripts]
+make-cryogrid-runs = "make_cryogrid_runs:main"
+
+[build-system]
+requires = ["uv_build>=0.9.9,<0.10.0"]
+build-backend = "uv_build"
+
+[tool.uv.sources]
+planetarycomputer-helper = { git = "https://gitlab.com/geospatial-tools/planetarycomputer-helper.git" }
