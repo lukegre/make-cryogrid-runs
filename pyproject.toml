@@ -6,7 +6,7 @@ readme = "README.md"
 authors = [
     { name = "lukegre", email = "lukegre@gmail.com" }
 ]
-requires-python = "==3.12.*"
+requires-python = "==3.12.11"
 dependencies = [
     "fsspec>=2025.12.0",
     "hvplot>=0.12.2",
